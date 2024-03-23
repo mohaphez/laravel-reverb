@@ -5,6 +5,7 @@ With the recent integration of Reverb into the Laravel ecosystem, real-time feat
 ### Scenarios Overview:
 
 - **Live Location Sharing**: Enable real-time sharing of locations between drivers and passengers (client-to-client).
+      ![laravel-share-live-location](https://github.com/mohaphez/laravel-reverb/assets/20874565/d949f3e0-12a6-42a2-accf-bffeb377c57f)
 - **Notification Broadcasting**: Trigger events and broadcast notifications to specific clients or presence channels (coming soon).
 - **Real-Time Currency Market Updates**: Broadcast real-time updates of currency market prices (coming soon).
 - **Client-Side Data Persistence**: Receive and persist user-provided information on the socket platform in real-time (coming soon).
