@@ -28,7 +28,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 1. Clone the project from GitHub:
 
     ```bash
-    git https://github.com/mohaphez/laravel-reverb.git
+    git clone https://github.com/mohaphez/laravel-reverb.git
     cd laravel-reverb
     ```
 
