@@ -1,0 +1,26 @@
+{
+    "name": "mohaphez/theme-module",
+    "description": "Theme module by Mohaphez",
+    "authors": [
+        {
+            "name": "Hessam taghvaei",
+            "email": "mohaphez@gmail.com"
+        }
+    ],
+    "require": {
+        "qirolab/laravel-themer": "^2.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Theme\\": ""
+        }
+    }
+}

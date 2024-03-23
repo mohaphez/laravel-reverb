@@ -1,0 +1,25 @@
+{
+    "name": "mohaphez/core-module",
+    "description": "Core module By Hessam Taghvaei",
+    "require": {
+        "predis/predis": "^v2.2",
+        "spatie/laravel-translatable": "^6.5.3",
+        "spatie/laravel-data": "^3.9.2",
+        "sentry/sentry-laravel": "^4.2.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.24.3",
+        "pestphp/pest-plugin-laravel": "^2.2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Core\\": ""
+        }
+    }
+}

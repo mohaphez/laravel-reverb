@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "mars:install": "cd themes/Mars/ && npm i",
+        "mars:dev": "cd themes/Mars/ && npm run dev",
+        "production": "cd themes/Mars/ && npm i && npm run build"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.7",
+        "@vitejs/plugin-vue": "^5.0.4"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "mohaphez/support-module",
+    "description": "Support module by Hessam Taghvaei",
+    "authors": [
+        {
+            "name": "Hessam Taghvaei",
+            "email": "hi@hessam.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Support\\": ""
+        }
+    }
+}

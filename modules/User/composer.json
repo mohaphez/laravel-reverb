@@ -1,0 +1,21 @@
+{
+    "name": "mohaphez/user-module",
+    "description": "User module by Hessam Taghvaei",
+    "authors": [
+        {
+            "name": "Hessam Taghvaei",
+            "email": "hi@hessam.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    }
+}

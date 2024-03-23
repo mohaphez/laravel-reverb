@@ -1,0 +1,13 @@
+{
+    "id": "$STUDLY_NAME$",
+    "title": "$STUDLY_NAME$ Module",
+    "version": 0.1,
+    "name": "$STUDLY_NAME$",
+    "alias": "$LOWER_NAME$",
+    "description": "$STUDLY_NAME$ module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\$PROVIDER_NAMESPACE$\\$STUDLY_NAME$ServiceProvider"
+    ]
+}

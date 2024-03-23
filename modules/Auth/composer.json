@@ -1,0 +1,23 @@
+{
+    "name": "mohaphez/auth-module",
+    "description": "Auth module by Hessam Taghvaei",
+    "authors": [
+        {
+            "name": "Hessam Taghvaei",
+            "email": "hi@hessam.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Auth\\": ""
+        }
+    }
+}

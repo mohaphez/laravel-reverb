@@ -1,0 +1,15 @@
+{
+    "name": "mohaphez/base-module",
+    "description": "Base module By Hessam Taghvaei",
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Base\\": ""
+        }
+    }
+}

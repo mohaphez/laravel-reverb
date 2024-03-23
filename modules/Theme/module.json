@@ -1,0 +1,14 @@
+{
+    "id": "Theme",
+    "title": "Theme Module",
+    "version": 0.1,
+    "name": "Theme",
+    "alias": "theme",
+    "description": "Theme module by mohaphez",
+    "keywords": [],
+    "priority": 10,
+    "providers": [
+        "Modules\\Theme\\Providers\\ThemeServiceProvider"
+    ],
+    "files": []
+}

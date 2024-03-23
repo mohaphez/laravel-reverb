@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use Modules\Base\Entities\V1\Fields\BaseFields\BaseFields;
+
+class {{ CLASS }} extends BaseFields
+{
+    public const ID = 'id';
+}

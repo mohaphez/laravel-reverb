@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use Modules\Base\Database\Factory\V1\BaseFactory\BaseFactory;
+
+class {{ CLASS }} extends BaseFactory
+{
+    /**
+     * Get the target model
+     */
+    public function model(): string
+    {
+        return {{ HELPER }}()->model();
+    }
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [];
+    }
+}

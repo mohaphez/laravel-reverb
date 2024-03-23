@@ -1,0 +1,38 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\ServiceProvider;
+
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * Boot the application events.
+     *
+     * @return void
+     */
+    public function boot(): void
+    {
+       $this->registerServices();
+       $this->registerObservers();
+    }
+
+    /**
+     * Register module services.
+     *
+     * @return void
+     */
+    private function registerServices(): void
+    {
+        // write sth you'd like to do...
+    }
+
+
+    /**
+     * Register model observers
+     */
+    private function registerObservers(): void
+    {
+
+    }
+}

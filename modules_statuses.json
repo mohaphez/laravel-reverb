@@ -1,0 +1,9 @@
+{
+    "Core": true,
+    "Base": true,
+    "Support": true,
+    "User": true,
+    "Auth": true,
+    "Theme": true,
+    "Travel": true
+}

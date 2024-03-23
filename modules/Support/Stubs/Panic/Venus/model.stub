@@ -1,0 +1,32 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Base\Entities\V1\BaseModel;
+
+class {{ CLASS }} extends BaseModel
+{
+    use HasFactory,
+        {{ MODEL }}Modifiers,
+        {{ MODEL }}Relations,
+        {{ MODEL }}Scopes;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<string>
+     */
+    protected $fillable = [
+        #{{ MODEL }}Fields::ID,
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        #{{ MODEL }}Fields::CREATED_AT => 'datetime',
+    ];
+}

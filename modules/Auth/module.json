@@ -1,0 +1,11 @@
+{
+    "id": "Auth",
+    "title": "Auth Module",
+    "version": 0.1,
+    "name": "Auth",
+    "alias": "auth",
+    "description": "Auth module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 1,
+    "providers": ["Modules\\Auth\\Providers\\AuthServiceProvider"]
+}

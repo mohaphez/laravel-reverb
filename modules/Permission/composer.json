@@ -1,0 +1,24 @@
+{
+    "name": "mohaphez/permission-module",
+    "description": "Permission module by Hessam Taghvaei",
+    "authors": [
+        {
+            "name": "Hessam Taghvaei",
+            "email": "hi@hessam.dev"
+        }
+    ],
+    "require": {
+        "bezhansalleh/filament-shield": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Permission\\": ""
+        }
+    }
+}

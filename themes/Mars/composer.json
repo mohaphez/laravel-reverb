@@ -1,0 +1,17 @@
+{
+    "name": "mohaphez/mars-theme",
+    "type": "project",
+    "description": "Mars theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hessam taghvaei",
+            "email": "mohaphez@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Themes\\Mars\\": ""
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "Travel",
+    "title": "Travel Module",
+    "version": 0.1,
+    "name": "Travel",
+    "alias": "travel",
+    "description": "Travel module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 1,
+    "providers": [
+        "Modules\\Travel\\Providers\\TravelServiceProvider"
+    ]
+}

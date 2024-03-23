@@ -1,0 +1,12 @@
+{
+    "id": "User",
+    "title": "User Module",
+    "version": 0.1,
+    "name": "User",
+    "alias": "user",
+    "description": "User module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 0,
+    "providers": ["Modules\\User\\Providers\\UserServiceProvider"],
+    "files": ["Helpers/helpers.php"]
+}

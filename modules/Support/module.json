@@ -1,0 +1,11 @@
+{
+    "id": "Support",
+    "title": "Support Module",
+    "version": 0.1,
+    "name": "Support",
+    "alias": "support",
+    "description": "Support module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 0,
+    "providers": ["Modules\\Support\\Providers\\SupportServiceProvider"]
+}

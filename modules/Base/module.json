@@ -1,0 +1,11 @@
+{
+    "id": "Base",
+    "title": "Base Module",
+    "version": 0.1,
+    "name": "Base",
+    "alias": "base",
+    "keywords": [],
+    "priority": 0,
+    "providers": ["Modules\\Base\\Providers\\BaseServiceProvider"],
+    "files": ["Helpers/helpers.php"]
+}

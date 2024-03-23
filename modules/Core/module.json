@@ -1,0 +1,16 @@
+{
+    "id": "Core",
+    "title": "Core Module",
+    "version": 0.1,
+    "name": "Core",
+    "alias": "core",
+    "description": "Core module By Hessam Taghvaei",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Core\\Providers\\HelperServiceProvider",
+        "Modules\\Core\\Providers\\ModuleServiceProvider",
+        "Modules\\Core\\Providers\\ModuleRouteServiceProvider"
+    ],
+    "files": ["Helpers/helpers.php"]
+}

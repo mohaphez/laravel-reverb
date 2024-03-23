@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use Modules\Base\Repositories\V1\BaseRepository\BaseRepository;
+use {{ INTERFACE_NAMESPACE }};
+use {{ MODEL_NAMESPACE }};
+
+class {{ CLASS }} extends BaseRepository implements {{ INTERFACE_REPOSITORY }}
+{
+    /**
+     * Specify Model class name
+     */
+    public function model(): string
+    {
+        return {{ MODEL }}::class;
+    }
+}

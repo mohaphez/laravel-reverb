@@ -1,0 +1,9 @@
+<?php
+
+namespace {{ NAMESPACE }};
+
+use Modules\Base\Contracts\V1\BaseRepositoryInterface\BaseRepositoryInterface;
+
+interface {{ CLASS }} extends BaseRepositoryInterface
+{
+}

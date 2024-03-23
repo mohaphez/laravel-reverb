@@ -1,0 +1,23 @@
+{
+    "name": "$VENDOR$/$LOWER_NAME$-module",
+    "description": "$STUDLY_NAME$ module by $AUTHOR_NAME$",
+    "authors": [
+        {
+            "name": "$AUTHOR_NAME$",
+            "email": "$AUTHOR_EMAIL$"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\": ""
+        }
+    }
+}
