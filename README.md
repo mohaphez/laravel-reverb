@@ -90,7 +90,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 You can access the panel by opening your web browser and navigating to:
 
 ```
-http://localhost/manager
+http://localhost/login
 ```
 
 ### Default Driver Credentials
