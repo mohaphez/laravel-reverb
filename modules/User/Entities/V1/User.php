@@ -75,4 +75,9 @@ class User extends Authenticatable implements FilamentUser, HasName, MustVerifyE
     {
         return $this->name;
     }
+
+    public function receivesBroadcastNotificationsOn(): string
+    {
+        return 'users.'.$this->id;
+    }
 }

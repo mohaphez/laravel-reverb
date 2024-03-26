@@ -9,3 +9,5 @@ Broadcast::channel('travel-live-location.{tracking_code}', function (User $user,
     $travel = travel()->where('tracking_code', $trackingCode)->first();
     return in_array($user->id, [$travel->passenger_id, $travel->driver_id]);
 });
+
+Broadcast::channel('users.{id}', fn ($user, $id) => (int) $user->id === (int) $id);
