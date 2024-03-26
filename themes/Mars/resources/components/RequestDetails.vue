@@ -67,7 +67,7 @@ export default {
       } else if (Notification.permission !== 'denied') {
         Notification.requestPermission().then(function (permission) {
           if (permission === "granted") {
-            let notification = new Notification("Hello, World!");
+           new Notification(`You have new service for ${data.user} ${data.tracking_code}`);
           }
         });
       }
