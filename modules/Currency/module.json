@@ -1,0 +1,13 @@
+{
+    "id": "Currency",
+    "title": "Currency Module",
+    "version": 0.1,
+    "name": "Currency",
+    "alias": "currency",
+    "description": "Currency module By Amir Reza Rezaei",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Currency\\Providers\\CurrencyServiceProvider"
+    ]
+}

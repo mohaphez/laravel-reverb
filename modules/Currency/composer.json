@@ -1,0 +1,27 @@
+{
+    "name": "mohaphez/currency-module",
+    "description": "Currency module by amiza and hessam",
+    "authors": [
+        {
+            "name": "Hessam taghvaei",
+            "email": "hi@hessam.dev"
+        },
+        {
+            "name": "Amir Reza Rezaei",
+            "email": "callAmizyi@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Currency\\": ""
+        }
+    }
+}
