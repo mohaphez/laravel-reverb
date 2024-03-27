@@ -11,5 +11,6 @@ enum TravelStatus: int
     use CleanEnum;
 
     case Accepted = 0;
-    case Canceled = 1;
+    case Pending = 1;
+    case Canceled = 2;
 }

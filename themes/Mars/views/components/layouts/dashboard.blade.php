@@ -16,6 +16,9 @@
             <a href="/" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white">Dashboard</a>
         </nav>
         <nav class="mt-4">
+            <a href="/travel" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white">Travel</a>
+        </nav>
+        <nav class="mt-4">
             <a href="/currency" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white">Currency</a>
         </nav>
     </aside>

@@ -1,11 +1,17 @@
 <template>
   <div>
-    <div class="crypto-cards">
-      <div v-for="(currency, index) in cryptocurrencies" :key="index" class="crypto-card" :style="{ background: getGradientBackground(index) }">
-        <div class="crypto-card-content">
-          <h3>{{ currency.currency }}</h3>
-          <p>Amount: {{ currency.amount }}</p>
-          <p>Change: {{ currency.change }}%</p>
+    <div class="crypto-cards flex flex-wrap">
+      <div v-for="(currency, index) in cryptocurrencies" :key="index" class="crypto-card w-full md:w-1/3 lg:w-1/4 xl:w-1/5 mb-6 px-4">
+        <div class="bg-white ring ring-neutral-200 rounded-md p-4 transition-transform duration-300 transform hover:-translate-y-2">
+          <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-semibold">{{ currency.currency }}</h3>
+            <p class="text-gray-600">{{ currency.amount }}</p>
+          </div>
+          <p :class="{ 'text-green-500': currency.change > 0, 'text-red-500': currency.change < 0 }" class="text-xl font-semibold text-right mt-auto">
+            <span v-if="currency.change > 0">&#9650;</span>
+            <span v-else-if="currency.change < 0">&#9660;</span>
+            {{ currency.change }}%
+          </p>
         </div>
       </div>
     </div>
@@ -42,43 +48,13 @@ export default {
         .catch(error => {
           console.error('Error fetching cryptocurrency data:', error);
         });
-    },
-    getGradientBackground(index) {
-      // Generate gradient background based on index
-      return `linear-gradient(135deg, #${Math.floor(Math.random()*16777215).toString(16)} 0%, #${Math.floor(Math.random()*16777215).toString(16)} 100%)`;
     }
   }
 };
 </script>
 
 <style>
-.crypto-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.crypto-card {
-  width: calc(33.33% - 20px); /* Adjust based on your design */
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.crypto-card:hover {
-  transform: translateY(-5px);
-}
-
-.crypto-card-content {
-  padding: 20px;
-}
-
-.crypto-card h3 {
-  margin-top: 0;
-}
-
-.crypto-card p {
-  margin: 5px 0;
+body {
+  background-color: #f3f4f6; /* Equivalent to bg-neutral-100 in Tailwind */
 }
 </style>
