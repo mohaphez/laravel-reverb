@@ -68,7 +68,7 @@ class SubscribeToExchangeChannel extends Command
             try {
                 $currency = $this->processMessage($message, $channel);
                 $this->updateCurrencyPair($currency, $channel);
-                CurrencyMarketUpdateEvent::dispatch($this->currencyPairs, $channel);
+                CurrencyMarketUpdateEvent::dispatch($this->currencyPairs);
             } catch (Exception $e) {
                 $this->error($e);
             }
@@ -81,10 +81,10 @@ class SubscribeToExchangeChannel extends Command
         $data = [];
 
         if (str_contains($channel, self::BINANCE_CHANNEL)) {
-            $amountFormatNumber = $messageArray['c'] > 10000 ? 1 : 3;
+            $amountFormatNumber = (int) $messageArray['c'] > 10000 ? 1 : 3;
             $data = [
                 'currency' => $messageArray['s'],
-                'amount'   => number_format($messageArray['c'], $amountFormatNumber),
+                'amount'   => number_format((float)$messageArray['c'], $amountFormatNumber),
                 'change'   => $messageArray['P'],
             ];
         } elseif (str_contains($channel, self::KUCOIN_CHANNEL)) {
