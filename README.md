@@ -94,7 +94,14 @@ Before you begin, make sure you have the following prerequisites installed on yo
     ./vendor/bin/sail php artisan reverb:start --debug
     ```
 
-9. Run vite:
+11. Run npm dependencies:
+
+    ```bash
+    ./vendor/bin/sail npm install 
+    ./vendor/bin/sail npm run mars:install 
+   ./vendor/bin/sail cd services/ExchangeService && npm  install
+   
+12. Run vite:
 
     ```bash
     ./vendor/bin/sail npm run mars:dev
