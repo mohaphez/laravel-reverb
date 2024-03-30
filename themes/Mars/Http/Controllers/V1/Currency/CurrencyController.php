@@ -3,7 +3,7 @@
 namespace Themes\Mars\Http\Controllers\V1\Currency;
 
 use Modules\Base\Http\Controllers\API\V1\BaseAPIController;
-use Modules\Currency\Events\API\V1\CurrencyMarketUpdateEvent;
+use Modules\Currency\Events\V1\CurrencyMarketUpdateEvent;
 
 // use Modules\Currency\Events\Api\V1\CurrencyMarketUpdateEvent;
 
