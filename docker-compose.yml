@@ -25,6 +25,20 @@ services:
         depends_on:
             - mysql
             - redis
+
+
+    exchange-app:
+        build: ./Services/ExchangeService
+        ports:
+            - '8090:8080'
+        volumes:
+            - './Services/ExchangeService:/usr/src/app'
+        networks:
+            - sail
+        depends_on:
+            - redis
+
+
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
@@ -49,6 +63,8 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
+
+
     redis:
         image: 'redis:alpine'
         ports:
