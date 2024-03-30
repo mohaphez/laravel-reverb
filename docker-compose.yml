@@ -28,7 +28,7 @@ services:
 
 
     exchange-app:
-        build: ./Services/ExchangeService
+        build: ./services/ExchangeService
         ports:
             - '8090:8080'
         volumes:
