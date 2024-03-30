@@ -1,6 +1,8 @@
 <?php
 
-namespace Modules\Currency\Events\Api\V1;
+declare(strict_types=1);
+
+namespace Modules\Currency\Events\V1;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
@@ -10,7 +12,9 @@ use Illuminate\Queue\SerializesModels;
 
 class CurrencyMarketUpdateEvent implements ShouldBroadcast
 {
-    use Dispatchable, InteractsWithSockets, SerializesModels;
+    use Dispatchable;
+    use InteractsWithSockets;
+    use SerializesModels;
 
     public mixed $cryptocurrencies;
 
