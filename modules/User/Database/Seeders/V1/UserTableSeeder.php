@@ -23,6 +23,16 @@ class UserTableSeeder extends Seeder
             user()->create(
                 [
                     'name'           => 'Uber Driver',
+                    'email'          => 'admin@example.com',
+                    'password'       => bcrypt('password'),
+                    'account_type'   => AccountType::Sudo,
+                    'account_status' => AccountStatus::Free,
+                ],
+            );
+
+            user()->create(
+                [
+                    'name'           => 'Uber Driver',
                     'email'          => 'driver@example.com',
                     'password'       => bcrypt('password'),
                     'account_type'   => AccountType::Sudo,
