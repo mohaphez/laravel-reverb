@@ -64,7 +64,7 @@ class SubscribeToExchangeChannel extends Command
     protected function subscribeToChannels(): void
     {
         Redis::psubscribe(['exchange-*'], function ($message, $channel): void {
-            $this->info("Data received from {$channel} channel");
+            $this->info("Data received from Redis {$channel} channel");
             try {
                 $currency = $this->processMessage($message, $channel);
                 $this->updateCurrencyPair($currency, $channel);
