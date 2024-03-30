@@ -62,7 +62,7 @@ class Kucoin extends EventEmitter {
 
     getSubscriptionPayload() {
         return {
-            topic: '/market/candles:BTC-USDT_1hour,ETH-USDT_1hour,XRP-USDT_1hour,DOGE-USDT_1hour',
+            topic: '/market/snapshot:BTC-USDT,ETH-USDT,XRP-USDT,XLM-USDT,LTC-USDT,DOT-USDT,ADA-USDT,LINK-USDT,BNB-USDT,DOGE-USDT',
             type: 'subscribe',
         };
     }

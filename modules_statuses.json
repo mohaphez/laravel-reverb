@@ -6,5 +6,7 @@
     "Auth": true,
     "Theme": true,
     "Travel": true,
-    "Currency": true
+    "Currency": true,
+    "Command": true,
+    "SubscribeToExchangeChannel": true
 }

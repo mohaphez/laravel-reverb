@@ -15,10 +15,16 @@ class Binance extends EventEmitter {
     onOpen() {
         console.log('Connected to Binance');
         this.ws.send(JSON.stringify({ method: 'SUBSCRIBE', params: [
-                'btcusdt@kline_1h',
-                'ethusdt@kline_1h',
-                'xrpusdt@kline_1h',
-                'dogeusdt@kline_1h',
+                'btcusdt@ticker',
+                'ethusdt@ticker',
+                'xrpusdt@ticker',
+                'dogeusdt@ticker',
+                'xlmusdt@ticker',
+                'linkusdt@ticker',
+                'bnbusdt@ticker',
+                'dotusdt@ticker',
+                'adausdt@ticker',
+                'ltcusdt@ticker'
             ], id: 1 }));
     }
 
