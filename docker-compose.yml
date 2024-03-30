@@ -32,7 +32,7 @@ services:
         ports:
             - '8090:8080'
         volumes:
-            - './Services/ExchangeService:/usr/src/app'
+            - './services/ExchangeService:/usr/src/app'
         networks:
             - sail
         depends_on:
