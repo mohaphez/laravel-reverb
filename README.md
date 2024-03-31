@@ -116,6 +116,11 @@ You can access the panel by opening your web browser and navigating to:
 http://localhost/login
 ```
 
+### Default Admin Credentials
+
+-   **Username:** admin@example.com
+-   **Password:** password
+  
 ### Default Driver Credentials
 
 -   **Username:** driver@example.com
