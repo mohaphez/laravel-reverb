@@ -10,7 +10,9 @@ With the recent integration of Reverb into the Laravel ecosystem, real-time feat
 - **Notification Broadcasting**: Trigger events and broadcast notifications to specific clients or presence channels.
    - You can find the scenario description [here](https://hessam-dev.medium.com/broadcast-notification-to-authorized-user-64dc05f7a427).
 ![notification](https://github.com/mohaphez/laravel-reverb/assets/20874565/95adb257-5719-42cd-b6e0-e260ade75a57)
-- **Real-Time Currency Market Updates**: Broadcast real-time updates of currency market prices (coming soon).
+- **Real-Time Currency Market Updates**: Broadcast real-time updates of currency market prices.
+  - You can find the scenario description [here](https://hessam-dev.medium.com/seamless-integration-node-js-redis-laravel-and-reverb-for-real-time-exchange-data-3b2c21ee7dfb).
+    ![currency](https://github.com/mohaphez/laravel-reverb/assets/20874565/add09a97-a655-462f-8cbe-15f2a87df106)
 - **Client-Side Data Persistence**: Receive and persist user-provided information on the socket platform in real-time (coming soon).
 
 ## Getting Started
