@@ -13,7 +13,9 @@ With the recent integration of Reverb into the Laravel ecosystem, real-time feat
 - **Real-Time Currency Market Updates**: Broadcast real-time updates of currency market prices.
   - You can find the scenario description [here](https://hessam-dev.medium.com/seamless-integration-node-js-redis-laravel-and-reverb-for-real-time-exchange-data-3b2c21ee7dfb).
     ![currency](https://github.com/mohaphez/laravel-reverb/assets/20874565/add09a97-a655-462f-8cbe-15f2a87df106)
-- **Client-Side Data Persistence**: Receive and persist user-provided information on the socket platform in real-time (coming soon).
+- **Client-Side Data Persistence**: Receive and persist user-provided information on the socket platform in real-time.
+  - ![output](https://github.com/user-attachments/assets/c131be96-e38b-46ab-9306-9256bbcc8c57)
+
 
 ## Getting Started
 
