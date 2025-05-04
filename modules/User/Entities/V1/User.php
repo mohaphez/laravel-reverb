@@ -35,6 +35,7 @@ class User extends Authenticatable implements FilamentUser, HasName, MustVerifyE
         'email',
         'password',
         'name',
+        'description',
         'account_type',
         'account_status',
         'limitation_end_date',

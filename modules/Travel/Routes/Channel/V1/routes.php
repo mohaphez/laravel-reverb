@@ -11,3 +11,5 @@ Broadcast::channel('travel-live-location.{tracking_code}', function (User $user,
 });
 
 Broadcast::channel('users.{id}', fn ($user, $id) => (int) $user->id === (int) $id);
+
+Broadcast::channel('document.{id}', fn (User $user, string $id) => true);
