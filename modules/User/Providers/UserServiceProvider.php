@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Reverb\Events\MessageReceived;
 use Modules\User\Contracts\Services\UserServiceInterface;
+use Modules\User\Listeners\V1\HandleMessage;
 use Modules\User\Services\V1\UserService;
 
 class UserServiceProvider extends ServiceProvider
@@ -19,6 +22,7 @@ class UserServiceProvider extends ServiceProvider
     {
         $this->registerServices();
         $this->registerObservers();
+        $this->registerEventListeners();
     }
 
     /**
@@ -31,12 +35,22 @@ class UserServiceProvider extends ServiceProvider
         $this->app->bind(UserServiceInterface::class, UserService::class);
     }
 
-
     /**
      * Register model observers
      */
     private function registerObservers(): void
     {
 
+    }
+
+    /**
+     * Register event listeners
+     */
+    private function registerEventListeners(): void
+    {
+        Event::listen(
+            MessageReceived::class,
+            HandleMessage::class
+        );
     }
 }

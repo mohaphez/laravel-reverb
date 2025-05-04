@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Themes\Mars\Http\Controllers\V1\Auth\LoginController;
 use Themes\Mars\Http\Controllers\V1\Client\DashboardController;
 use Themes\Mars\Http\Controllers\V1\Currency\CurrencyController;
+use Themes\Mars\Http\Controllers\V1\Document\DocumentController;
 use Themes\Mars\Http\Controllers\V1\Travel\TravelController;
 
 Route::get('/',       [LoginController::class,'show'])->name('home');
@@ -23,4 +24,8 @@ Route::group(['middleware' => 'auth'], function (): void {
 
 Route::group(['middleware' => 'auth'], function (): void {
     Route::get('/currency', [CurrencyController::class,'currency'])->name('currency');
+});
+
+Route::group(['middleware' => 'auth'], function (): void {
+    Route::get('/document', [DocumentController::class,'document'])->name('document');
 });
